@@ -5,3 +5,11 @@
 输入汉字获得拼音的小工具。
 
 you play with it here: <https://afoo.me/pinyin/index.html>
+
+# at dev
+
+```
+tailwindcss-cli -o public/global.css -w
+```
+
+

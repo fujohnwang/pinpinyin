@@ -1,43 +1,53 @@
 <script>
     import {pinyin} from 'pinyin-pro';
 
-    let zhValue;
+    let zhValue='';
     let pinyinValue = '';
+    let hanziEmpty = true;
 
     function onEnter(e) {
         if (e.charCode === 13) {
-            pinyinValue = pinyin(zhValue)
+            pinpinyin()
         }
     }
+
+    function pinpinyin(){
+        pinyinValue = pinyin(zhValue)
+    }
+
+    $: {
+        hanziEmpty =  zhValue == '';
+        if(hanziEmpty) {
+            pinyinValue = '';
+        }
+    }
+
 </script>
 
-<main>
-    <h1>输入汉字获取拼音</h1>
-    <input type="text" bind:value={zhValue} on:keypress={onEnter}/>
-    <p>{pinyinValue}</p>
 
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAACWAAAAAYAQMAAABEalRSAAAABlBMVEX///9TU1NYzE1OAAAAAXRSTlMAQObYZgAAAOtJREFUeF7tljEKwzAMRb/J0CWgI/QKOYAh1+pUcjQfpUfw2MFEHVyDQSQmQUNM9AYNcobnh4egU+YVqhAvZSpgsfolPnSv5d0nz3vHslgUdK81RLzyvHcsi+WBNxQh4Ln8pw4Wi7skAg9mXgHMrEACXJnbHIllsbqGAtwXhnYswzFzwPWxWEPc2CexoobkHM4ZpD6s2loWiyIEEwCChIomMiMEHqgP573C9eHkc5VLWh3XsljnGVoLWVl+31bp38piTVVuihtPOAm9kcRLbrFjEvqwamtZLK5eI8sSan9rXEK0LcNFrY5oWawf59S7YSRD7eMAAAAASUVORK5CYII=" style="max-width: 100%;height: auto;" alt/>
-    <p>Copyright © <a href="https://afoo.me">王福强</a>个人版权所有 - Since 2021</p>
-</main>
+<div class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
 
-<style>
-    main {
-        text-align: center;
-        padding: 1em;
-        max-width: 240px;
-        margin: 0 auto;
-    }
+    <div class="relative flex flex-col items-center">
+        <label for="hanzi" class="leading-7 text-sm font-black text-gray-600 self-start">输入汉字(按回车键）获取拼音：</label>
+        <input type="search" id="hanzi" name="hanzi" placeholder="这里输入汉字...(按Escape键清除)"
+               class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+               bind:value={zhValue} on:keypress={onEnter}
+        >
+        <button class="w-full my-1 text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg disabled:bg-gray-500 disabled:text-slate-400 disabled:border-slate-200"
+                on:click={pinpinyin} disabled={hanziEmpty}>
+            给老子拼 🤪
+        </button>
 
-    h1 {
-        color: #ff3e00;
-        text-transform: uppercase;
-        font-size: 4em;
-        font-weight: 100;
-    }
+        <div class="pt-4 w-full h-full bg-gray-50 mt-3 p-8 rounded">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-400 mb-4" viewBox="0 0 975.036 975.036">
+                <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
+            </svg>
+            <p class="leading-relaxed mb-6 text-3xl">{pinyinValue}</p>
+        </div>
+    </div>
 
-    @media (min-width: 640px) {
-        main {
-            max-width: none;
-        }
-    }
-</style>
+</div>
+
+
+
+
