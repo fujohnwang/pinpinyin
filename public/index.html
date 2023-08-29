@@ -1,164 +1,263 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-	<meta charset='utf-8'>
-	<meta name='viewport' content='width=device-width,initial-scale=1'>
-	<meta name="robots" content="index,follow">
-	<meta name="description" content="一个根据汉字拼出拼音的在线工具">
-	<meta name="keywords" content="汉字,拼音,这字怎么读,这字怎么拼,这字怎么念,汉字拼音,hanzi,pinyin">
-	<meta name="author" content="王福强">
-	<title>汉字转拼音工具</title>
-	<link rel='icon' type='image/png' href='favicon.png'>
-	<link rel='stylesheet' href='global.css'>
-	<link rel='stylesheet' href='build/bundle.css'>
-	<script defer src='build/bundle.js'></script>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width,initial-scale=1'>
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="一个根据汉字拼出拼音的在线工具">
+    <meta name="keywords" content="汉字,拼音,这字怎么读,这字怎么拼,这字怎么念,汉字拼音,hanzi,pinyin">
+    <meta name="author" content="王福强">
+    <title>汉字转拼音工具</title>
+    <link rel='icon' type='image/png' href='favicon.png'>
+    <link rel='stylesheet' href='global.css'>
+    <link rel='stylesheet' href='build/bundle.css'>
+    <script defer src='build/bundle.js'></script>
 </head>
 
 <body class="antialiased text-gray-900 dark:text-slate-300 tracking-tight bg-white dark:bg-slate-900 vsc-initialized">
 
 <header
-		class="sticky top-0 z-40 flex-none mx-auto w-full bg-white md:bg-white/90 dark:bg-slate-900 dark:md:bg-slate-900/90 md:backdrop-blur-sm border-b dark:border-b-0"
-		id="header">
-	<div class="py-3 px-3 mx-auto w-full md:flex md:justify-between max-w-6xl md:px-4">
-		<div class="flex justify-between">
-			<h1 class="flex" href="/">
+        class="sticky top-0 z-40 flex-none mx-auto w-full bg-white md:bg-white/90 dark:bg-slate-900 dark:md:bg-slate-900/90 md:backdrop-blur-sm border-b dark:border-b-0"
+        id="header">
+    <div class="py-3 px-3 mx-auto w-full md:flex md:justify-between max-w-6xl md:px-4">
+        <div class="flex justify-between">
+            <h1 class="flex" href="/">
 					<span
-							class="ml-2 text-6xl font-extrabold text-gray-900 dark:text-white text-center">
+                            class="ml-2 text-6xl font-extrabold text-gray-900 dark:text-white text-center">
                         汉字读音/汉字拼音/这字怎么念/这字怎么读/这字怎么拼
 					</span>
-			</h1>
-		</div>
-	</div>
+            </h1>
+        </div>
+    </div>
 </header>
 
-<main>
+<section class="text-gray-600 body-font">
+    <div class="container px-5 py-12 mx-auto">
+        <main>
+            <!-- placeholder -->
+        </main>
 
-</main>
+        <div class="text-center mt-12">
+            <h2 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">其它访问入口</h2>
+        </div>
+        <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2">
+            <div class="sm:w-1/2 w-full pr-1 pb-1">
+                <div class="bg-gray-50 rounded flex p-4 h-full items-center">
+                    <svg width="40" height="40" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M41.789 14.3419C41.052 12.8678 38.9483 12.8678 38.2113 14.3419L13.4474 63.8697C12.7825 65.1995 13.7495 66.7642 15.2362 66.7642L33.9993 66.7642L39.9993 42.7642L45.9993 66.7642L64.7641 66.7642C66.2509 66.7642 67.2178 65.1995 66.5529 63.8697L41.789 14.3419Z"
+                              fill="#6FCF97"/>
+                        <path d="M39.6521 13.2661V44.1527L33.9993 66.7642H15.2362C13.7495 66.7642 12.7825 65.1996 13.4474 63.8698L38.2113 14.3419C38.5194 13.7258 39.0662 13.3672 39.6521 13.2661Z"
+                              fill="#219653"/>
+                    </svg>
+                    <span class="title-font font-medium"><a
+                            href="https://pinyin.afoo.me/">https://pinyin.afoo.me/</a></span>
+                </div>
+            </div>
+            <div class="sm:w-1/2 w-full pr-1 pb-1">
+                <div class="bg-gray-50 rounded flex p-4 h-full items-center">
+                    <svg width="40" height="40" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M41.789 14.3419C41.052 12.8678 38.9483 12.8678 38.2113 14.3419L13.4474 63.8697C12.7825 65.1995 13.7495 66.7642 15.2362 66.7642L33.9993 66.7642L39.9993 42.7642L45.9993 66.7642L64.7641 66.7642C66.2509 66.7642 67.2178 65.1995 66.5529 63.8697L41.789 14.3419Z"
+                              fill="#6FCF97"/>
+                        <path d="M39.6521 13.2661V44.1527L33.9993 66.7642H15.2362C13.7495 66.7642 12.7825 65.1996 13.4474 63.8698L38.2113 14.3419C38.5194 13.7258 39.0662 13.3672 39.6521 13.2661Z"
+                              fill="#219653"/>
+                    </svg>
+                    <span class="title-font font-medium"><a href="https://hanzipinyin.afoo.me/">https://hanzipinyin.afoo.me/</a></span>
+                </div>
+            </div>
+            <div class="sm:w-1/2 w-full pr-1 pb-1">
+                <div class="bg-gray-50 rounded flex p-4 h-full items-center">
+                    <svg width="40" height="40" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M41.789 14.3419C41.052 12.8678 38.9483 12.8678 38.2113 14.3419L13.4474 63.8697C12.7825 65.1995 13.7495 66.7642 15.2362 66.7642L33.9993 66.7642L39.9993 42.7642L45.9993 66.7642L64.7641 66.7642C66.2509 66.7642 67.2178 65.1995 66.5529 63.8697L41.789 14.3419Z"
+                              fill="#6FCF97"/>
+                        <path d="M39.6521 13.2661V44.1527L33.9993 66.7642H15.2362C13.7495 66.7642 12.7825 65.1996 13.4474 63.8698L38.2113 14.3419C38.5194 13.7258 39.0662 13.3672 39.6521 13.2661Z"
+                              fill="#219653"/>
+                    </svg>
+                    <span class="title-font font-medium"><a
+                            href="https://zzzmn.afoo.me/">https://zzzmn.afoo.me/</a></span>
+                </div>
+            </div>
+            <div class="sm:w-1/2 w-full pr-1 pb-1">
+                <div class="bg-gray-50 rounded flex p-4 h-full items-center">
+                    <svg width="40" height="40" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M41.789 14.3419C41.052 12.8678 38.9483 12.8678 38.2113 14.3419L13.4474 63.8697C12.7825 65.1995 13.7495 66.7642 15.2362 66.7642L33.9993 66.7642L39.9993 42.7642L45.9993 66.7642L64.7641 66.7642C66.2509 66.7642 67.2178 65.1995 66.5529 63.8697L41.789 14.3419Z"
+                              fill="#6FCF97"/>
+                        <path d="M39.6521 13.2661V44.1527L33.9993 66.7642H15.2362C13.7495 66.7642 12.7825 65.1996 13.4474 63.8698L38.2113 14.3419C38.5194 13.7258 39.0662 13.3672 39.6521 13.2661Z"
+                              fill="#219653"/>
+                    </svg>
+                    <span class="title-font font-medium"><a
+                            href="https://zzzmp.afoo.me/">https://zzzmp.afoo.me/</a></span>
+                </div>
+            </div>
+            <div class="sm:w-1/2 w-full pr-1 pb-1">
+                <div class="bg-gray-50 rounded flex p-4 h-full items-center">
+                    <svg width="40" height="40" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M41.789 14.3419C41.052 12.8678 38.9483 12.8678 38.2113 14.3419L13.4474 63.8697C12.7825 65.1995 13.7495 66.7642 15.2362 66.7642L33.9993 66.7642L39.9993 42.7642L45.9993 66.7642L64.7641 66.7642C66.2509 66.7642 67.2178 65.1995 66.5529 63.8697L41.789 14.3419Z"
+                              fill="#6FCF97"/>
+                        <path d="M39.6521 13.2661V44.1527L33.9993 66.7642H15.2362C13.7495 66.7642 12.7825 65.1996 13.4474 63.8698L38.2113 14.3419C38.5194 13.7258 39.0662 13.3672 39.6521 13.2661Z"
+                              fill="#219653"/>
+                    </svg>
+                    <span class="title-font font-medium"><a
+                            href="https://zzzmd.afoo.me/">https://zzzmd.afoo.me/</a></span>
+                </div>
+            </div>
+            <div class="sm:w-1/2 w-full pr-1 pb-1">
+                <div class="bg-gray-50 rounded flex p-4 h-full items-center">
+                    <svg width="40" height="40" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M41.789 14.3419C41.052 12.8678 38.9483 12.8678 38.2113 14.3419L13.4474 63.8697C12.7825 65.1995 13.7495 66.7642 15.2362 66.7642L33.9993 66.7642L39.9993 42.7642L45.9993 66.7642L64.7641 66.7642C66.2509 66.7642 67.2178 65.1995 66.5529 63.8697L41.789 14.3419Z"
+                              fill="#6FCF97"/>
+                        <path d="M39.6521 13.2661V44.1527L33.9993 66.7642H15.2362C13.7495 66.7642 12.7825 65.1996 13.4474 63.8698L38.2113 14.3419C38.5194 13.7258 39.0662 13.3672 39.6521 13.2661Z"
+                              fill="#219653"/>
+                    </svg>
+                    <span class="title-font font-medium"><a href="https://hanzipinyin.blackwhole.cn/">https://hanzipinyin.blackwhole.cn/</a></span>
+                </div>
+            </div>
+            <div class="sm:w-1/2 w-full pr-1 pb-1">
+                <div class="bg-gray-50 rounded flex p-4 h-full items-center">
+                    <svg width="40" height="40" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M41.789 14.3419C41.052 12.8678 38.9483 12.8678 38.2113 14.3419L13.4474 63.8697C12.7825 65.1995 13.7495 66.7642 15.2362 66.7642L33.9993 66.7642L39.9993 42.7642L45.9993 66.7642L64.7641 66.7642C66.2509 66.7642 67.2178 65.1995 66.5529 63.8697L41.789 14.3419Z"
+                              fill="#6FCF97"/>
+                        <path d="M39.6521 13.2661V44.1527L33.9993 66.7642H15.2362C13.7495 66.7642 12.7825 65.1996 13.4474 63.8698L38.2113 14.3419C38.5194 13.7258 39.0662 13.3672 39.6521 13.2661Z"
+                              fill="#219653"/>
+                    </svg>
+                    <span class="title-font font-medium"><a href="https://hanzipinyin.blackwhole.cn/">https://hanzipinyin.blackwhole.cn/</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 <footer class="border-t border-gray-200 dark:border-slate-800">
-	<div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
 
-		<div class="md:flex md:items-center md:justify-between py-6 md:py-8">
-			<ul class="flex mb-4 md:order-1 -ml-2 md:ml-4 md:mb-0">
-				<li>
-					<a class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
-					   aria-label="Twitter" href="https://twitter.com/fujohnwang">
-						<svg viewBox="0 0 24 24" class="w-5 h-5" astro-icon="tabler:brand-twitter">
-							<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-								  stroke-width="2"
-								  d="M22 4.01c-1 .49-1.98.689-3 .99-1.121-1.265-2.783-1.335-4.38-.737S11.977 6.323 12 8v1c-3.245.083-6.135-1.395-8-4 0 0-4.182 7.433 4 11-1.872 1.247-3.739 2.088-6 2 3.308 1.803 6.913 2.423 10.034 1.517 3.58-1.04 6.522-3.723 7.651-7.742a13.84 13.84 0 0 0 .497-3.753C20.18 7.773 21.692 5.25 22 4.009z">
-							</path>
-						</svg>
-					</a>
-				</li>
-				<li>
-					<a class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
-					   aria-label="Facebook" href="https://www.facebook.com/fujohnwang/">
-						<svg viewBox="0 0 24 24" class="w-5 h-5" astro-icon="tabler:brand-facebook">
-							<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-								  stroke-width="2"
-								  d="M7 10v4h3v7h4v-7h3l1-4h-4V8a1 1 0 0 1 1-1h3V3h-3a5 5 0 0 0-5 5v2H7"></path>
-						</svg>
-					</a>
-				</li>
-				<li>
-					<a class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
-					   aria-label="Github" href="https://github.com/fujohnwang">
-						<svg viewBox="0 0 24 24" class="w-5 h-5" astro-icon="tabler:brand-github">
-							<path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-								  stroke-width="2"
-								  d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21">
-							</path>
-						</svg>
-					</a>
-				</li>
-			</ul>
-			<div class="text-sm text-gray-700 mr-4 dark:text-slate-400">
+        <div class="md:flex md:items-center md:justify-between py-6 md:py-8">
+            <ul class="flex mb-4 md:order-1 -ml-2 md:ml-4 md:mb-0">
+                <li>
+                    <a class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
+                       aria-label="Twitter" href="https://twitter.com/fujohnwang">
+                        <svg viewBox="0 0 24 24" class="w-5 h-5" astro-icon="tabler:brand-twitter">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                  stroke-width="2"
+                                  d="M22 4.01c-1 .49-1.98.689-3 .99-1.121-1.265-2.783-1.335-4.38-.737S11.977 6.323 12 8v1c-3.245.083-6.135-1.395-8-4 0 0-4.182 7.433 4 11-1.872 1.247-3.739 2.088-6 2 3.308 1.803 6.913 2.423 10.034 1.517 3.58-1.04 6.522-3.723 7.651-7.742a13.84 13.84 0 0 0 .497-3.753C20.18 7.773 21.692 5.25 22 4.009z">
+                            </path>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
+                       aria-label="Facebook" href="https://www.facebook.com/fujohnwang/">
+                        <svg viewBox="0 0 24 24" class="w-5 h-5" astro-icon="tabler:brand-facebook">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                  stroke-width="2"
+                                  d="M7 10v4h3v7h4v-7h3l1-4h-4V8a1 1 0 0 1 1-1h3V3h-3a5 5 0 0 0-5 5v2H7"></path>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
+                       aria-label="Github" href="https://github.com/fujohnwang">
+                        <svg viewBox="0 0 24 24" class="w-5 h-5" astro-icon="tabler:brand-github">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                  stroke-width="2"
+                                  d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21">
+                            </path>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <div class="text-sm text-gray-700 mr-4 dark:text-slate-400">
 					<span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 float-left rounded-sm">
-						<img src="https://afoo.me/favicon.svg" class="rounded-md" alt />
+						<img src="https://afoo.me/favicon.svg" class="rounded-md" alt/>
 					</span>
-				Copyright © <a href="https://afoo.me">王福强</a>个人版权所有 - Since 2021
-			</div>
-		</div>
-	</div>
+                Copyright © <a href="https://afoo.me">王福强</a>个人版权所有 - Since 2021
+            </div>
+        </div>
+    </div>
 </footer>
 
 <script>
-	// Set "light" theme as default
-	// if (!localStorage.theme) {
-	//   localStorage.theme = "light";
-	// }
+    // Set "light" theme as default
+    // if (!localStorage.theme) {
+    //   localStorage.theme = "light";
+    // }
 
-	if (
-			localStorage.theme === 'dark' ||
-			(!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
-	) {
-		document.documentElement.classList.add('dark');
-	} else {
-		document.documentElement.classList.remove('dark');
-	}
+    if (
+        localStorage.theme === 'dark' ||
+        (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
+        document.documentElement.classList.add('dark');
+    } else {
+        document.documentElement.classList.remove('dark');
+    }
 
-	function attachEvent(selector, event, fn) {
-		const matches = document.querySelectorAll(selector);
-		if (matches && matches.length) {
-			matches.forEach((elem) => {
-				elem.addEventListener(event, () => fn(elem), false);
-			});
-		}
-	}
+    function attachEvent(selector, event, fn) {
+        const matches = document.querySelectorAll(selector);
+        if (matches && matches.length) {
+            matches.forEach((elem) => {
+                elem.addEventListener(event, () => fn(elem), false);
+            });
+        }
+    }
 
-	window.onload = function () {
-		attachEvent('[data-aw-toggle-menu]', 'click', function (elem) {
-			elem.classList.toggle('expanded');
-			document.body.classList.toggle('overflow-hidden');
-			document.getElementById('header')?.classList.toggle('h-screen');
-			document.querySelector('#header nav')?.classList.toggle('hidden');
-		});
+    window.onload = function () {
+        attachEvent('[data-aw-toggle-menu]', 'click', function (elem) {
+            elem.classList.toggle('expanded');
+            document.body.classList.toggle('overflow-hidden');
+            document.getElementById('header')?.classList.toggle('h-screen');
+            document.querySelector('#header nav')?.classList.toggle('hidden');
+        });
 
-		attachEvent('[data-aw-toggle-color-scheme]', 'click', function () {
-			document.documentElement.classList.toggle('dark');
-			localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
-		});
+        attachEvent('[data-aw-toggle-color-scheme]', 'click', function () {
+            document.documentElement.classList.toggle('dark');
+            localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';
+        });
 
-		attachEvent('[data-aw-social-share]', 'click', function (elem) {
-			const network = elem.getAttribute('data-aw-social-share');
-			const url = encodeURIComponent(elem.getAttribute('data-aw-url'));
-			const text = encodeURIComponent(elem.getAttribute('data-aw-text'));
+        attachEvent('[data-aw-social-share]', 'click', function (elem) {
+            const network = elem.getAttribute('data-aw-social-share');
+            const url = encodeURIComponent(elem.getAttribute('data-aw-url'));
+            const text = encodeURIComponent(elem.getAttribute('data-aw-text'));
 
-			let href;
-			switch (network) {
-				case 'facebook':
-					href = `https://www.facebook.com/fujohnwang`;
-					break;
-				case 'twitter':
-					href = `https://twitter.com/fujohnwang`;
-					break;
-				case 'linkedin':
-					href = `https://www.linkedin.com/in/fuqiangwang/`;
-					break;
-				case 'mail':
-					href = `mailto:fujohnwang@gmail.com?subject=%22${text}%22&body=${text}%20${url}`;
-					break;
+            let href;
+            switch (network) {
+                case 'facebook':
+                    href = `https://www.facebook.com/fujohnwang`;
+                    break;
+                case 'twitter':
+                    href = `https://twitter.com/fujohnwang`;
+                    break;
+                case 'linkedin':
+                    href = `https://www.linkedin.com/in/fuqiangwang/`;
+                    break;
+                case 'mail':
+                    href = `mailto:fujohnwang@gmail.com?subject=%22${text}%22&body=${text}%20${url}`;
+                    break;
 
-				default:
-					return;
-			}
+                default:
+                    return;
+            }
 
-			const newlink = document.createElement('a');
-			newlink.target = '_blank';
-			newlink.href = href;
-			newlink.click();
-		});
-	};
-	window.onpageshow = function () {
-		const elem = document.querySelector('[data-aw-toggle-menu]');
-		if (elem) {
-			elem.classList.remove('expanded');
-		}
-		document.body.classList.remove('overflow-hidden');
-		document.getElementById('header')?.classList.remove('h-screen');
-		document.querySelector('#header nav')?.classList.add('hidden');
-	};
+            const newlink = document.createElement('a');
+            newlink.target = '_blank';
+            newlink.href = href;
+            newlink.click();
+        });
+    };
+    window.onpageshow = function () {
+        const elem = document.querySelector('[data-aw-toggle-menu]');
+        if (elem) {
+            elem.classList.remove('expanded');
+        }
+        document.body.classList.remove('overflow-hidden');
+        document.getElementById('header')?.classList.remove('h-screen');
+        document.querySelector('#header nav')?.classList.add('hidden');
+    };
 </script>
 
 </body>
