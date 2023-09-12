@@ -130,8 +130,20 @@
                 </div>
             </div>
         </div>
+
+
+
+        <div class="text-center mt-12">
+            <h2 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">更多福强造的工具</h2>
+        </div>
+        <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2">
+            <div id="tooling-footer" class="mx-auto"></div>
+        </div>
+
+
     </div>
 </section>
+
 
 
 <footer class="border-t border-gray-200 dark:border-slate-800">
@@ -260,5 +272,16 @@
     };
 </script>
 
+<script>
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "https://toolfooter.afoo.me/", true);
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            var footerElement = document.getElementById("tooling-footer");
+            footerElement.innerHTML = xhr.responseText;
+        }
+    };
+    xhr.send();
+</script>
 </body>
 </html>

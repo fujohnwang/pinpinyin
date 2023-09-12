@@ -14,6 +14,9 @@
 
     function pinpinyin(){
         pinyinValue = pinyin(zhValue)
+        if(pinyinValue == zhValue) {
+            pinyinValue = 'oops... 好像俺这里找不到这个字的音标😅'
+        }
     }
 
     $: {
