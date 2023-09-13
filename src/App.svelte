@@ -15,7 +15,7 @@
     function pinpinyin() {
         pinyinValue = pinyin(zhValue)
         if (pinyinValue == zhValue) {
-            fetch(`https://www.zdic.net/hans/${encodeURI(zhValue)}`).then(function (response) {
+            fetch(`https://corsproxy.afoo.me/corsproxy/?target=https://www.zdic.net/hans/${encodeURI(zhValue)}`).then(function (response) {
                 return response.text();
             }).then(function (html) {
                 try {
