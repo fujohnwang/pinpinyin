@@ -13,3 +13,10 @@ tailwindcss-cli -o public/global.css -w
 ```
 
 
+# add details
+
+```
+https://hanyu.baidu.com/zici/s?from=aladdin&query=%E7%AC%8F&srcid=51368&wd=%E7%AC%8F#detailmean
+
+笏=%E7%AC%8F
+```
